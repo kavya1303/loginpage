@@ -1,0 +1,147 @@
+
+*{
+box-sizing: border-box;
+}
+body {
+font-family: comic sans ms;
+}
+
+.left{
+width:50%;
+float:left;
+border:1px solid transparent;
+border-radius:10px;
+
+background-image: linear-gradient(rgb(255, 255, 153),white);
+
+height:550px;
+
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-bottom: 1px solid black;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.login {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius:5px;
+}
+.login:hover {
+  opacity: 0.8;
+}
+.head{
+text-align:center;
+font-family:high tower text;
+}
+.google{
+background-color: dodgerblue;
+color:white;
+border-radius:0  5px  5px 0;
+padding:15px 25px;
+border-left:none;
+border:none;
+  cursor: pointer;
+}
+.google:hover{
+opacity:0.8;
+}
+.googleimg{
+position:relative;
+border-radius: 5px 0 0 5px;
+border-left: solid 2px dodgerblue;
+height:45px;
+width:40px;
+
+left:3px;
+}
+form{
+margin:30px;
+}
+span{
+margin:60px;
+}
+.signup{
+text-decoration:none;
+color:black;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+ top:70px;
+left:85px;
+
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.ani {
+  width: 50px;
+  height: 50px;
+ background-image:url("https://www.pngkit.com/png/detail/333-3332142_contextual-fun-and-learn-icon.png");
+ background-size:cover;
+  position: relative;
+  animation-name: bulb;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+ 
+}
+
+@keyframes bulb {
+  0%   { left:0px; top:550px;}
+ 50% {  transform: rotate(60deg);left:100px; top:500px;}
+  75% {  transform: rotate(150deg);left:550x; top:500px;}
+    100% {  transform: rotate(360deg);left:1000px; top:500px;}
+
+  
+}
+@media screen and (max-width: 800px) {
+  .left {
+    width: 100%;
+  }
+.ani{visibility:hidden;
+}
+}
