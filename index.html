@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+<div class="left">
+<h1 class="head">Login to MyWebsite</h1>
+<h4 class="head">Login to your account and manage your digital world</h4>
+<form action="/action_page.php" method="post">
+
+    <label for="uname" required><b>Email</b></label>
+    <input type="text" placeholder="someone@gmail.com" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+     <button  class="login" type="submit">Log in</button>
+ </form>   
+
+<hr style="width:48%;float:left"> or<hr style="width:48%;float:right">
+<center>
+<img class="googleimg" src="https://img-authors.flaticon.com/google.jpg">  
+  <button class="google">Sign in with google</button>
+
+<h6 ><span> Dont have an account?</span><span><a class="signup" href="#">Sign up here</a></span></h6> 
+
+</center>
+
+</div>
+<div class="left">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://blog.capterra.com/wp-content/uploads/2020/03/header-image-shows-icons-depicting-an-online-class.png" style="width:75%">
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="https://tophat.com/wp-content/uploads/TopHat_Blog_Classroom-Activities_B.jpg" style="width:75%">
+
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://image.freepik.com/free-vector/office-workers-people-work-flat-concept-vector-illustration-cartoon-business-office-company-workplaces-teamwork-collection-with-businessman-characters_169479-1153.jpg" style="width:75%;height:250px">
+  
+</div>
+
+</div>
+<br><br><br><br><br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<h2 class="head">Learn with Mywebsite</h2>
+<h4 class="head">Learn using our intteractive examples and tutorials</h4>
+
+
+</div>
+<div class="ani"></div>
+</body>
+</html>
